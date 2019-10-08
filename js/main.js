@@ -9,15 +9,15 @@ $(document).ready(function () {
 
 
         if (x < 300) {
+            $('.more300').hide();
+        } else {
             $('.more300').show();
             $('.more300').change(function () {
                 if ($(this).is(':checked')) {
-                    alert("transform the money");
+                    alert("done");
                     $(this).prop('checked', false)
                 };
             });
-        } else {
-            $('.more300').hide();
         }
 
     });
