@@ -2,11 +2,12 @@ $(document).ready(function () {
 
 
     $('.check').click(function () {
+
         var x = $('.price').val();
         $('.radio').prop('checked', false)
+
         console.log(x)
         $('.form').hide();
-
 
         if (x < 300) {
             $('.more300').hide();
