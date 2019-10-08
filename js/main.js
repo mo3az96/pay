@@ -6,17 +6,18 @@ $(document).ready(function () {
         $('.radio').prop('checked', false)
         console.log(x)
         $('.form').hide();
+
+
         if (x < 300) {
-            $('.less300').show();
+            $('.more300').show();
             $('.more300').change(function () {
                 if ($(this).is(':checked')) {
-                    // Do something...
-                    alert("You can't");
+                    alert("transform the money");
                     $(this).prop('checked', false)
                 };
             });
         } else {
-            $('.less300').hide();
+            $('.more300').hide();
         }
 
     });
